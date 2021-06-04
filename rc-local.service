@@ -1,6 +1,3 @@
-#cd /etc/sytemd/system/
-#nano /rc-local.service
-isikan script dibawah ini
 [Unit]
 Description=/etc/rc.local
 ConditionPathExists=/etc/rc.local
