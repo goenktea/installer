@@ -1,0 +1,22 @@
+# verbose level 0=info, 1=verbose, 2=very verbose
+verbose: 0
+listen:
+  # ssh
+  - target_host: 127.0.0.1
+    target_port: 22
+    listen_port: 2082
+
+    # openvpn
+  - target_host: 127.0.0.1
+    target_port: 1194
+    listen_port: 2086
+
+    # squid
+  - target_host: 127.0.0.1
+    target_port: 3128
+    listen_port: 8080
+
+    # psiphon
+  - target_host: 127.0.0.1
+    target_port: 65000
+    listen_port: 8888
