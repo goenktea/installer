@@ -2,13 +2,12 @@
 Description=psiphond
 
 [Service]
-User=nobody
+User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/local/bin/psiphon -config /usr/local/etc/psiphond/psiphond.config run
+ExecStart=psiphond -config /usr/local/etc/psiphond/psiphond.config run
 Restart=on-failure
-RestartPreventExitStatus=23
 
 [Install]
 WantedBy=multi-user.target
